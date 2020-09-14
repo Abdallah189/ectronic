@@ -4,9 +4,13 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        {% include 'fileUsed/linkes.html.twig'%}
     </head>
     <body>
+     {% include 'fileUsed/menu.html.twig'%}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
+        {% include 'fileUsed/fotter.html.twig'%}
+        {% include 'fileUsed/scripts.html.twig'%}
     </body>
 </html>
